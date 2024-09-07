@@ -1,0 +1,22 @@
+/* estilo de la barra de navegacion */
+.navbar{
+ position:fixed;
+ top:0;
+ width: 100%;
+ z-index: 1000;
+ background-color: aqua;
+
+}
+
+
+/* estilo del cuerpo*/
+body {
+padding-top: 70px; /* la idea es que el contenido no quede abajo */
+}
+
+/* estilo tarjeta*/
+.tarjeta {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
