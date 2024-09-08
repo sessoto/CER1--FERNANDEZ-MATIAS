@@ -13,25 +13,25 @@
 <!-- cuerpo de la página principal -->
 <body>
     <!-- ahora creo directamente la barra de navegación -->
-    <nav class="navbar">
-        <div class="barra">
-            <a class="barra opcion" href="index.html">Tienda Verde</a>
-            <button class="boton" type="button">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tienda Verde</a>
+            <button class="boton" type="button"  data-bs-toggle="collapse" data-bs-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="items de la barra">
-                <ul class="lista no ordenada de items">
-                    <li class="item1">
-                        <a href="index.html">Inicio</a>
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
-                    <li class="item2">
-                        <a href="catalogo.html">Catálogo</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
                     </li>
 
-                    <li class="item3">
-                        <a href="formulario.html">Formulario</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Formulario</a>
                     </li>
 
                 </ul>
@@ -44,35 +44,35 @@
     <!-- fin de la barra de navegación -->
 
     <!-- ahora coloco el header con el titulo y su bajada -->
-    <header class="cabecera">
+    <header class="container text-center mt-5 pt-5">
         <h1>Tienda Verde</h1>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore harum nihil quaerat excepturi molestias? Pariatur harum earum labore cum, recusandae consectetur deleniti maiores laborum, iste libero suscipit veritatis itaque explicabo!</p>
     </header>
     <!-- final header -->
 
     <!-- Seccion Productos destacados -->
-     <section class="destacados">
-        <h2>Productos Destacados</h2>
-        <div class="fila">
+     <section class="galeria container my-5">
+        <h2 class="text-center">Productos Destacados</h2>
+        <div class="row">
              <!-- primera tarjeta -->
-            <div class="primera tarjeta">
-                <div class="card">
+            <div class="col-md-4">
+                <div class="tarjeta">
                     <img src="img/1.jpg" class="card-img-top" alt="producto 1">
                     <div class="card-body">
                         <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi sit amet lectus semper viverra.</p>
+                        <p class="card-text"> descripción del producto a exponer</p>
                     </div>
                 </div>
             </div>
              <!-- final primera tarjeta -->
 
               <!-- segunda tarjeta -->
-            <div class="segunda tarjeta">
+            <div class="col-md-4">
                 <div class="tarjeta">
                     <img src="img/2.jpg" class="card-img-top" alt="producto 2">
                     <div class="card-body">
                         <h5 class="card-title">Producto 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi sit amet lectus semper viverra.</p>
+                        <p class="card-text">descripción del producto a exponer</p>
                     </div>
                 </div>
             </div>
@@ -80,12 +80,12 @@
 
             <!-- tercera tarjeta -->
 
-            <div class="tercera tarjeta">
+            <div class="col-md-4">
                 <div class="tarjeta">
                     <img src="img/3.jpg" class="card-img-top" alt="producto 3">
                     <div class="card-body">
                         <h5 class="card-title">Producto 3</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nisi sit amet lectus semper viverra.</p>
+                        <p class="card-text">descripción del producto a exponer</p>
                     </div>
                 </div>
             </div>

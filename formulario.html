@@ -10,28 +10,28 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 
-<!-- cuerpo de la página principal -->
+<!-- cuerpo de la página formulario -->
 <body>
-    <!-- ahora creo directamente la barra de navegación -->
-    <nav class="navbar">
-        <div class="barra">
-            <a class="barra opcion" href="index.html">Tienda Verde</a>
-            <button class="boton" type="button">
-
+    <!-- ahora barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Tienda Verde</a>
+            <button class="boton" type="button"  data-bs-toggle="collapse" data-bs-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="items de la barra">
-                <ul class="lista no ordenada de items">
-                    <li class="item1">
-                        <a href="index.html">Inicio</a>
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
-                    <li class="item2">
-                        <a href="catalogo.html">Catálogo</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
                     </li>
 
-                    <li class="item3">
-                        <a href="formulario.html">Formulario</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Formulario</a>
                     </li>
 
                 </ul>
@@ -40,3 +40,8 @@
 
 
     </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
