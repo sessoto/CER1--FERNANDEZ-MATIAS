@@ -74,3 +74,28 @@ document.getElementById("tipoResiduo").addEventListener("change", function(){
     subcategoria.innerHTML = opciones;
 
 });
+
+// Funcion que valida si se envia o no la solicitud
+
+document.getElementById("formularioReciclaje").addEventListener("submit", function(event) {
+    //evitar que se envíe sin querer
+    event.preventDefault();
+
+    //se obtienen los elementos
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const direccion = document.getElementById("direccion").value;
+    const tipoResiduo = document.getElementById("tipoResiduo").value;
+    const subcategoriaResiduo = document.getElementById("subcategoriaResiduo").value;
+    
+
+    if(!nombre || !correo || !direccion || !tipoResiduo || !subcategoriaResiduo || !subcategoriaResiduo){
+
+        alert("Te falta completar todos los campos obligatorios.");
+
+    }else{
+        alert("Solicitud enviada con éxito.");
+        this.reset();// resetea los valores de los input al enviar el formulario
+        }
+
+});

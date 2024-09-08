@@ -43,14 +43,14 @@
 
 <!-- Estructura del Formulario  --> 
 <section class="container my-5 pt-5">
-<h2> Solicitud de Reciclaje </h2>
-<form>
+<h2 class="text-center"> Solicitud de Reciclaje </h2>
+<form id="formularioReciclaje">
 
     <!--  ahora los tipos de residuos  --> 
-      <div>
-        <label>Tipo de Residuo</label>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Selecciona un tipo de residuo</option>
+      <div class="mb-3">
+        <label for="tipoResiduo" class="form-label" >Tipo de Residuo</label>
+        <select id="tipoResiduo" class="form-select" required>
+            <option value="" disabled selected>Selecciona un tipo de residuo</option>
             <option value="plastico"> Plástico </option>
             <option value="papel"> Papel </option>
             <option value="vidrio"> Vidrio </option>
@@ -60,45 +60,41 @@
       </div>
 
     <!--  ahora los tipos de residuos  -->
-      <div>
-        <label>Subcategoría de Residuos</label>
-        <select>
+      <div class="mb-3">
+        <label for="subcategoriaResiduo" class="form-label">Subcategoría de Residuos</label>
+        <select id="subcategoriaResiduo" class="form-select" required>
             <option value="">Selecciona una subcategoría</option>
         </select>
       </div>
 
       <!--  datos del solicitante  -->
       <div>
-        <label>Nombre del solicitante</label>
-        <input type="text">
+        <label for="nombre" class="form-label">Nombre del solicitante</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>
       </div>
 
-      <div>
-        <label>Correo Electrónico</label>
-        <input type="email">
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" id="correo" class="form-control" placeholder="nombre@ejemplo.com" required>
       </div>
 
-      <div>
-        <label>dirección de recolección</label>
-        <input type="text">
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección de recolección</label>
+        <input type="text" id="direccion" class="form-control" placeholder="Ingrese la dirección" required>
       </div>
 
-      <div>
-        <label>Cantidad de Residuos</label>
-        <input type="number">
-      </div>
 
-      <div>
-        <label>Comentario Adicional</label>
-        <input type="text">
+      <div class="mb-3">
+        <label for="comentarios" class="form-label">Comentario Adicional</label>
+        <textarea id="comentarios" class="form-control" rows="3" placeholder="Comenta aquí ">
+        </textarea>
       </div>
 
       <!--  botón de enviar  -->
-      <div>
-        <button type="submit">Enviar</button>
-      </div>
 
- </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+
 </form>
 
 </section>
